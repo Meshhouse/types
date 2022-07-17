@@ -45,6 +45,7 @@ export type ModelSimple = {
   title_en?: string;
   title_ru?: string;
   title?: string;
+  copyrighted_content: boolean;
   mature_content: boolean;
   available_formats: string[];
   thumbnail: string;
