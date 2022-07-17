@@ -1,0 +1,22 @@
+{
+  "name": "@meshhouse/typings",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Typescript declarations for MeshHouse project",
+  "main": "",
+  "types": "index.d.ts",
+  "typeScriptVersion": "4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Meshhouse/typings.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": {
+    "name": "Maxim Makarov",
+    "email": "aks11311@gmail.com",
+    "url": "https://github.com/longsightedfilms"
+  },
+  "license": "MIT"
+}
