@@ -31,14 +31,16 @@ export type CategoryDTO = {
 }
 
 export type CategoryFilterValueBasic = {
-  title_en: string;
-  title_ru: string;
+  title_en?: string;
+  title_ru?: string;
+  title?: string;
   value: string;
 }
 
 export type CategoryFilterValueColor = {
-  title_en: string;
-  title_ru: string;
+  title_en?: string;
+  title_ru?: string;
+  title?: string;
   value: string;
   color: string;
 }
