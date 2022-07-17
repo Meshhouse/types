@@ -61,3 +61,11 @@ export type SitePatron = {
   title: string;
   level: string;
 }
+
+export type DynamicBlock<T> = {
+  id: number;
+  type: BlockType;
+  content: T[];
+  created_at: string;
+  updated_at: string;
+}
