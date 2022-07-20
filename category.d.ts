@@ -50,7 +50,6 @@ export type CategoryFilterValueRange = {
   max: number;
 }
 
-
 export type CategoryFilter = {
   id: number;
   category: number | null;
@@ -64,6 +63,20 @@ export type CategoryFilter = {
   title?: string;
   title_en?: string;
   title_ru?: string;
+}
+
+export type CategoryFilterDTO = {
+  id: number;
+  category: number | null;
+  order: number;
+  key: string;
+  localized: boolean;
+  type: CategoryFilterType;
+  querystring_alias: string;
+  value_delimeter: string | null;
+  values: CategoryFilterValueBasic[] | CategoryFilterValueColor[] | CategoryFilterValueRange[];
+  title_en: string;
+  title_ru: string;
 }
 
 export type SharedCategoryFilter = {
