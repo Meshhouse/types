@@ -18,6 +18,13 @@ export type Collection = {
   title?: string;
 }
 
+export type CollectionDTO = {
+  id: number;
+  slug: string;
+  title_en: string;
+  title_ru: string;
+}
+
 export type ModelImage = {
   original: string;
   slide: string;
