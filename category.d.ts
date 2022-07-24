@@ -67,7 +67,7 @@ export type CategoryFilter = {
 
 export type CategoryFilterDTO = {
   id: number;
-  category: number | null;
+  categories: number[];
   order: number;
   key: string;
   localized: boolean;
