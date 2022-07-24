@@ -63,6 +63,12 @@ export type CategoryFilter = {
   title?: string;
   title_en?: string;
   title_ru?: string;
+  description?: string;
+  description_en?: string;
+  description_ru?: string;
+  unit?: string;
+  unit_en?: string;
+  unit_ru?: string;
 }
 
 export type CategoryFilterDTO = {
@@ -77,6 +83,10 @@ export type CategoryFilterDTO = {
   values: CategoryFilterValueBasic[] | CategoryFilterValueColor[] | CategoryFilterValueRange[];
   title_en: string;
   title_ru: string;
+  description_en: string;
+  description_ru: string;
+  unit_en: string;
+  unit_ru: string;
 }
 
 export type SharedCategoryFilter = {
@@ -88,4 +98,8 @@ export type SharedCategoryFilter = {
   values: CategoryFilterValueBasic[] | CategoryFilterValueColor[] | CategoryFilterValueRange[];
   title_en: string;
   title_ru: string;
+  description_en: string;
+  description_ru: string;
+  unit_en: string;
+  unit_ru: string;
 }
