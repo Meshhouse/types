@@ -7,6 +7,8 @@ export type StaticPage = {
   content_en?: string;
   content_ru?: string;
   content?: string;
+  created_at: string;
+  updated_at: string;
 }
 
 export type StaticPageDTO = {
@@ -16,4 +18,6 @@ export type StaticPageDTO = {
   title_ru: string;
   content_en: string;
   content_ru: string;
+  created_at: string;
+  updated_at: string;
 }
