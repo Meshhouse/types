@@ -5,6 +5,7 @@
 /// <reference path="globals.d.ts" />
 /// <reference path="license.d.ts" />
 /// <reference path="models.d.ts" />
+/// <reference path="pages.d.ts" />
 /// <reference path="subscription.d.ts" />
 /// <reference path="user.d.ts" />
 
@@ -15,5 +16,6 @@ export * from './fs'
 export * from './globals'
 export * from './license'
 export * from './models'
+export * from './pages'
 export * from './subscription'
 export * from './user'
