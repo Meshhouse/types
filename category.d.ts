@@ -87,6 +87,7 @@ export type CategoryFilterDTO = {
   description_ru: string;
   unit_en: string;
   unit_ru: string;
+  multiple_values: boolean;
 }
 
 export type SharedCategoryFilter = {
