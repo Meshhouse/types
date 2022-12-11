@@ -69,6 +69,8 @@ export type CategoryFilter = {
   unit?: string;
   unit_en?: string;
   unit_ru?: string;
+  multiple_values: boolean;
+  visible: boolean;
 }
 
 export type CategoryFilterDTO = {
@@ -88,6 +90,7 @@ export type CategoryFilterDTO = {
   unit_en: string;
   unit_ru: string;
   multiple_values: boolean;
+  visible: boolean;
 }
 
 export type SharedCategoryFilter = {
