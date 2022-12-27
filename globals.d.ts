@@ -8,3 +8,8 @@ export type WithPagination<T> = {
   pagination: Pagination;
   items: T[];
 }
+
+export type Localization = {
+  key: string;
+  [key: string]: string;
+}
