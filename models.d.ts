@@ -58,6 +58,11 @@ export type ModelSimple = {
   thumbnail: string;
   category: string;
   status?: number;
+  statistics: {
+    views: number;
+    likes: number;
+    downloads: number;
+  };
   created_at: string;
   updated_at: string;
 }
