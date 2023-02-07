@@ -13,3 +13,15 @@ export type Localization = {
   key: string;
   [key: string]: string;
 }
+
+export type ConfigurationEntry<T> = {
+  id: number;
+  key: string;
+  group: string;
+  title: string;
+  description: string;
+  type: string;
+  value: T;
+  created_at: string;
+  updated_at: string;
+}
