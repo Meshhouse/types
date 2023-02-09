@@ -147,3 +147,28 @@ export type ModelDTO = {
     [key: string]: string;
   }
 }
+
+export type SimilarModelPreCondition = {
+  field: string;
+  value: unknown;
+  condition_id: number;
+}
+
+export type SimilarModelPostCondition = {
+  condition_id: number;
+  filters: SimilarModelFilter[];
+}
+
+export type SimilarModelFilter = {
+  field: string;
+  operand: 'equal' | 'in' | 'between';
+  value: unknown;
+}
+
+export type SimilarModelConfig = {
+  id?: number;
+  pre_conditions: SimilarModelPreCondition[],
+  post_conditions: SimilarModelPostCondition[],
+  created_at: string;
+  updated_at: string;
+}
