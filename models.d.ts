@@ -149,7 +149,7 @@ export type ModelDTO = {
 }
 
 export type SimilarModelPreCondition = {
-  field: string;
+  filter_id: number;
   value: unknown;
   condition_id: number;
 }
@@ -160,7 +160,7 @@ export type SimilarModelPostCondition = {
 }
 
 export type SimilarModelFilter = {
-  field: string;
+  filter_id: number;
   operand: 'equal' | 'in' | 'between';
   value: unknown;
 }
