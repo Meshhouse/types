@@ -104,7 +104,7 @@ export type ModelFull = {
   textures: ModelTextures | boolean;
   uv: ModelTexturesWrapping | boolean;
   filters: {
-    [key: string]: string;
+    [key: string]: string | string[];
   }
 }
 
