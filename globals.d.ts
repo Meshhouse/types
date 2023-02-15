@@ -34,6 +34,7 @@ export type Banner = {
   href: string | null;
   page: string | null;
   category: string | null;
+  status: boolean;
   created_at: string;
   updated_at: string;
 }
