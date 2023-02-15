@@ -25,3 +25,15 @@ export type ConfigurationEntry<T> = {
   created_at: string;
   updated_at: string;
 }
+
+export type Banner = {
+  id: number;
+  title: string;
+  type: 'static' | 'interactive';
+  source: string;
+  href: string | null;
+  page: string | null;
+  category: string | null;
+  created_at: string;
+  updated_at: string;
+}
