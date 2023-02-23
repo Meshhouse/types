@@ -172,3 +172,49 @@ export type SimilarModelConfig = {
   created_at: string;
   updated_at: string;
 }
+
+export type AccessoryModelPreCondition = {
+  filter_id: number;
+  value: unknown;
+  condition_id: number;
+}
+
+export type AccessoryModelPostCondition = {
+  condition_id: number;
+  accessories: {
+    category_id: number;
+    filters: SimilarModelFilter[];
+  }[];
+}
+
+export type AccessoryModelFilter = {
+  filter_id: number;
+  operand: 'equal' | 'in' | 'between';
+  value: unknown;
+  mapper: 'as-is' | boolean;
+}
+
+export type AccessoryModelConfig = {
+  id?: number;
+  pre_conditions: SimilarModelPreCondition[],
+  post_conditions: SimilarModelPostCondition[],
+  created_at: string;
+  updated_at: string;
+}
+
+export type ModelFilterMapper = {
+  source_filter_id: number;
+  target_filter_id: number;
+  values: Record<string | number, unknown>
+}
+
+export type ModelAccessories = {
+  categories: {
+    title_en?: string;
+    title_ru?: string;
+    title?: string;
+    slug: string;
+    href: string;
+  }[];
+  models: Record<string, ModelSimple[]>;
+}
