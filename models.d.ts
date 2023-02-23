@@ -196,8 +196,8 @@ export type AccessoryModelFilter = {
 
 export type AccessoryModelConfig = {
   id?: number;
-  pre_conditions: SimilarModelPreCondition[],
-  post_conditions: SimilarModelPostCondition[],
+  pre_conditions: AccessoryModelPreCondition[],
+  post_conditions: AccessoryModelPostCondition[],
   created_at: string;
   updated_at: string;
 }
