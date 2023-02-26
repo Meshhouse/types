@@ -183,7 +183,7 @@ export type AccessoryModelPostCondition = {
   condition_id: number;
   accessories: {
     category_id: number;
-    filters: SimilarModelFilter[];
+    filters: AccessoryModelFilter[];
   }[];
 }
 
