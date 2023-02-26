@@ -210,6 +210,7 @@ export type ModelFilterMapper = {
 
 export type ModelAccessories = {
   categories: {
+    id: number;
     title_en?: string;
     title_ru?: string;
     title?: string;
